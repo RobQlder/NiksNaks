@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="420" viewBox="0 0 600 420" role="img" aria-label="Collectable 02">
+  <rect width="600" height="420" fill="#D7F0ED"/>
+  <rect x="14" y="14" width="572" height="392" rx="14" fill="none" stroke="#2BA199" stroke-width="3" stroke-dasharray="10 8" opacity="0.55"/>
+  <circle cx="300.0" cy="164.0" r="30" fill="none" stroke="#2BA199" stroke-width="4" opacity="0.65"/>
+  <rect x="285.0" y="152.0" width="30" height="24" rx="4" fill="#2BA199" opacity="0.65"/>
+  <text x="50%" y="218.0" font-family="Fredoka, Nunito Sans, Arial, sans-serif" font-size="26" font-weight="600" fill="#2BA199" text-anchor="middle">Collectable 02</text>
+  <text x="50%" y="244.0" font-family="Nunito Sans, Arial, sans-serif" font-size="20" fill="#2BA199" opacity="0.8" text-anchor="middle">placeholder photo</text>
+</svg>
