@@ -239,8 +239,8 @@ a { color: var(--orange-dark); }
 
 /* "Powered by AxeTech" — matches the official lockup: small uppercase label
    centred against the stacked logo (mark over wordmark) */
-.powered-by { display: inline-flex; align-items: center; gap: 8px; }
-.powered-by .pb-label { color: #94a3b8; font-family: var(--font-body); font-weight: 500; font-size: 10px; line-height: 1; text-transform: uppercase; letter-spacing: 0.025em; }
+.powered-by { display: inline-flex; align-items: flex-end; gap: 8px; }
+.powered-by .pb-label { color: #94a3b8; font-family: var(--font-body); font-weight: 500; font-size: 10px; line-height: 1; text-transform: uppercase; letter-spacing: 0.025em; padding-bottom: 1px; }
 .powered-by img { height: 36px; width: auto; display: block; }
 
 /* Prototype ribbon */
