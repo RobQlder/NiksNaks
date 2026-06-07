@@ -207,8 +207,14 @@ a { color: var(--orange-dark); }
 /* Restoration gallery: fewer, larger columns for before/after photos */
 .gallery--restoration { columns: 3 300px; }
 
-/* Collection gallery: 5 columns wide — more pieces on show */
-.gallery--wide { columns: 5 180px; }
+/* Collection gallery: uniform 5-column grid — every card the same size
+   (not masonry, so image areas and cards line up consistently) */
+.gallery--wide { columns: auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; align-items: stretch; }
+.gallery--wide figure { margin: 0; display: flex; flex-direction: column; }
+.gallery--wide img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+@media (max-width: 1100px) { .gallery--wide { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 860px)  { .gallery--wide { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 620px)  { .gallery--wide { grid-template-columns: repeat(2, 1fr); } }
 
 /* Anchor scroll target offset so it clears the sticky header */
 [id] { scroll-margin-top: 90px; }
