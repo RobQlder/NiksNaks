@@ -91,6 +91,24 @@ a { color: var(--orange-dark); }
 .dropdown a { display: block; padding: 9px 12px; border-radius: 8px; border-bottom: 0; font-weight: 600; color: var(--ink); white-space: nowrap; }
 .dropdown a:hover { background: var(--cream-deep); color: var(--orange-dark); border-bottom: 0; }
 
+/* Era sub-menus (3rd level — fly out to the right) */
+.has-submenu { position: relative; }
+.has-submenu > a { display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+.has-submenu > a::after {
+  content: ""; display: inline-block; width: 0; height: 0; flex-shrink: 0;
+  border-top: 4px solid transparent; border-bottom: 4px solid transparent;
+  border-left: 5px solid currentColor; opacity: 0.55;
+}
+.submenu {
+  position: absolute; top: -8px; left: calc(100% + 6px); min-width: 240px;
+  padding: 8px; margin: 0; list-style: none;
+  background: #fff; border: 1px solid var(--line); border-radius: 12px;
+  box-shadow: var(--shadow-lg); opacity: 0; visibility: hidden;
+  transform: translateX(6px); transition: opacity .14s ease, transform .14s ease, visibility .14s;
+  z-index: 70;
+}
+.has-submenu:hover > .submenu, .has-submenu:focus-within > .submenu { opacity: 1; visibility: visible; transform: translateX(0); }
+
 /* Hero — legible: solid retro background, NOT text over busy art */
 .hero {
   background:

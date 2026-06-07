@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=8" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=9" />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
@@ -21,14 +21,35 @@
       <ul class="nav-links">
         <li><a href="index.html" aria-current="page">Home</a></li>
         <li class="has-dropdown">
-          <a href="collection.html" aria-haspopup="true">Collections</a>
+          <a href="#" aria-haspopup="true">Collections</a>
           <ul class="dropdown">
-            <li><a href="collection.html">Garfield</a></li>
-            <li><a href="collection.html">Masters of the Universe</a></li>
-            <li><a href="collection.html">She-Ra</a></li>
-            <li><a href="collection.html">Star Wars</a></li>
-            <li><a href="collection.html">Vintage Mego figures</a></li>
-            <li><a href="collection.html">Voltron</a></li>
+            <li class="has-submenu">
+              <a href="era-70s.html">70's</a>
+              <ul class="submenu">
+                <li><a href="collection.html">Mego figures</a></li>
+                <li><a href="collection.html">Other collectables</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="era-80s.html">80's</a>
+              <ul class="submenu">
+                <li><a href="collection.html">Garfield</a></li>
+                <li><a href="collection.html">Jem and the Holograms</a></li>
+                <li><a href="collection.html">Masters of the Universe</a></li>
+                <li><a href="collection.html">Rainbow Brite</a></li>
+                <li><a href="collection.html">She-Ra</a></li>
+                <li><a href="collection.html">Star Wars</a></li>
+                <li><a href="collection.html">Strawberry Shortcake</a></li>
+                <li><a href="collection.html">Voltron</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="era-90s.html">90's</a>
+              <ul class="submenu">
+                <li><a href="collection.html">Teenage Mutant Ninja Turtles</a></li>
+                <li><a href="collection.html">Other collectables</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="repair.html">Toy Restoration</a></li>
@@ -55,59 +76,32 @@
     </div>
   </section>
 
-  <!-- COLLECTIONS: real visual cards with thumbnails, not plain text links -->
+  <!-- COLLECTIONS: era cards -->
   <section class="section">
     <div class="container">
       <div class="center" style="margin-bottom:40px;">
         <h2>Explore the collections</h2>
       </div>
       <div class="grid-cards">
-        <a class="card" href="collection.html">
-          <img class="card-img" src="assets/img/cover-garfield.svg" alt="Garfield collection" />
+        <a class="card" href="era-70s.html">
+          <img class="card-img" src="assets/img/cover-70s.svg" alt="70's collections" />
           <div class="card-body">
-            <h3>Garfield</h3>
-            <p>Plush, figures and memorabilia.</p>
-            <span class="card-link">View collection →</span>
+            <h3>70's</h3>
+            <span class="card-link">Browse →</span>
           </div>
         </a>
-        <a class="card" href="collection.html">
-          <img class="card-img" src="assets/img/cover-motu.svg" alt="Masters of the Universe collection" />
+        <a class="card" href="era-80s.html">
+          <img class="card-img" src="assets/img/cover-80s.svg" alt="80's collections" />
           <div class="card-body">
-            <h3>Masters of the Universe</h3>
-            <p>Figures, vehicles and playsets from Eternia.</p>
-            <span class="card-link">View collection →</span>
+            <h3>80's</h3>
+            <span class="card-link">Browse →</span>
           </div>
         </a>
-        <a class="card" href="collection.html">
-          <img class="card-img" src="assets/img/cover-shera.svg" alt="She-Ra collection" />
+        <a class="card" href="era-90s.html">
+          <img class="card-img" src="assets/img/cover-90s.svg" alt="90's collections" />
           <div class="card-body">
-            <h3>She-Ra</h3>
-            <p>Princess of Power figures and accessories.</p>
-            <span class="card-link">View collection →</span>
-          </div>
-        </a>
-        <a class="card" href="collection.html">
-          <img class="card-img" src="assets/img/cover-starwars.svg" alt="Star Wars collection" />
-          <div class="card-body">
-            <h3>Star Wars</h3>
-            <p>Figures, ships and playsets from a galaxy far, far away.</p>
-            <span class="card-link">View collection →</span>
-          </div>
-        </a>
-        <a class="card" href="collection.html">
-          <img class="card-img" src="assets/img/cover-mego.svg" alt="Vintage Mego figures collection" />
-          <div class="card-body">
-            <h3>Vintage Mego figures</h3>
-            <p>1970s Mego action figures and accessories.</p>
-            <span class="card-link">View collection →</span>
-          </div>
-        </a>
-        <a class="card" href="collection.html">
-          <img class="card-img" src="assets/img/cover-voltron.svg" alt="Voltron collection" />
-          <div class="card-body">
-            <h3>Voltron</h3>
-            <p>Lions, robots and die-cast sets.</p>
-            <span class="card-link">View collection →</span>
+            <h3>90's</h3>
+            <span class="card-link">Browse →</span>
           </div>
         </a>
       </div>
